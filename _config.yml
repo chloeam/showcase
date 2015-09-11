@@ -17,6 +17,9 @@ gems:
   - bourbon
   - neat
 
+sass:
+  sass_dir: assets/stylesheets
+
 
 # Site Owner. Comment out what doesn't apply to you or you don't want to link to
 
