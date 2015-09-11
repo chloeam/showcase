@@ -2,22 +2,28 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="title">
+  <h1 class="site-title">{{ site.title }}</h1>
+  {% if site.tagline %}<p class="site-tagline">{{ site.tagline }}</p>{% endif %}
 </div>
+
+<div class="portfolio">
+  {% for post in site.posts %}
+    <div class="portfolio-project">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image.cover }}" alt="{{ post.title }}">
+        <h2 class="project-name">{{ post.title }}</h2>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+{% if site.owner.bio %}
+  <div class="about">
+    <h2>About</h2>
+    {% if site.owner.picture %}
+      <img src="{{ site.owner.picture }}" alt="{{ site.owner.name }}">
+    {% endif %}
+    <p class="bio">{{ site.owner.bio }}</p>
+  </div>
+{% endif %}

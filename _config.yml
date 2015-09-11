@@ -1,6 +1,7 @@
 # Site-wide Settings
 
 title: Your Awesome Title
+tagline: Short tagline (optional)
 description: "This should be a description of your site that's no more than 160 characters long. This helps with search engines. You can edit this in _config.yml."
 baseurl: "" # subpath of your site e.g. /blog/, like if using github project page. Don't change unless you know what you're doing
 locale: en_US
@@ -35,7 +36,7 @@ owner:
   dribbble: your-dribbble
   github: your-github
   codepen: your-codepen
-  disqus: your-disqus-shortname
+  disqus: chloeam
   bio: "This is your personal or professional bio that can be edited, along with many other things, in the _config.yml file in your root directory. Check it out!"
-  picture: /assets/images # path to your picture. Remove if you don't want to show your picture.
+  picture: /assets/images/chloe.jpg # path to your picture. Remove if you don't want to show your picture.
 

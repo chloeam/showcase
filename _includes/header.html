@@ -1,5 +1,15 @@
 <header class="site-header">
 
-  <p>This is the header</p>
+  <a class="home-link" href="/{{ base.url }}">{{ site.title }}</a>
+
+  <nav class="post-nav">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}">previous</a>
+    {% endif %}
+
+    {% if page.next %}
+      <a href="{{ page.next.url }}">next</a>
+    {% endif %}
+  </nav>
 
 </header>
