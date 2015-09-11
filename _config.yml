@@ -1,0 +1,38 @@
+# Site-wide Settings
+
+title: Your Awesome Title
+description: "This should be a description of your site that's no more than 160 characters long. This helps with search engines. You can edit this in _config.yml."
+baseurl: "" # subpath of your site e.g. /blog/, like if using github project page. Don't change unless you know what you're doing
+locale: en_US
+url: "http://yourdomain.com"
+repo: https://github.com/user/repository
+google_analytics: UA-whatever
+
+
+# Jekyll Configuration
+
+markdown: kramdown
+permalink: /:title/
+gems: 
+  - bourbon
+  - neat
+
+
+# Site Owner. Comment out what doesn't apply to you or you don't want to link to
+
+owner:
+  name: Chloe Atchue-Mamlet
+  email: your-email@domain.com
+  twitter: your-twitter
+  facebook: your-facebook
+  google_plus: your-gplus
+  linked_in: full-link # not just username, must be full profile link!
+  instagram: your-instagram
+  behance: your-behance
+  dribbble: your-dribbble
+  github: your-github
+  codepen: your-codepen
+  disqus: your-disqus-shortname
+  bio: "This is your personal or professional bio that can be edited, along with many other things, in the _config.yml file in your root directory. Check it out!"
+  picture: /assets/images # path to your picture. Remove if you don't want to show your picture.
+
