@@ -1,0 +1,50 @@
+// Colors
+
+$white: #fff;
+$black: #000;
+$gray: #828282;
+
+$primary-color: #FF74EC;
+$background-color: #fdfdfd;
+$text-color: #333;
+$link-color: $primary-color;
+
+// brand colors, don't change
+$twitter: rgba(85,172,238,1);
+$behance: #1769ff;
+$github: #333333;
+$instagram: #3f729b;
+$linkedin: #0077b5;
+$codepen: #fff;
+$tumblr: #35465c;
+$email: #dd4b39;
+$rss: #fa9b39;
+
+
+// Typography
+
+$base-font: serif;
+$heading-font: sans-serif;
+$secondary-heading-font: serif;
+$base-font-size: 22; // in pixels. This would result in 22px on desktop
+$base-line-height: 1.5; // how large the line height is as a multiple of font size
+$leading: $base-line-height * 1rem;
+$scale: 1.333; // how headings scale up
+
+
+$spacing-unit: 30px;
+
+
+// Syntax Highlighting Colors
+
+$highlight-background: #f8f8f8;
+$highlight-foreground: #2d2d2d;
+$highlight-comment: #7285b7;
+$highlight-red: #c82829;
+$highlight-orange: #f5871f;
+$highlight-yellow: #eab700;
+$highlight-green: #b9ca4a;
+$highlight-aqua: #66cccc;
+$highlight-blue: #6699cc;
+$highlight-purple: #c397d8;
+$highlight-linenumbers: #ccc;

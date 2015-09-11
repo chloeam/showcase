@@ -1,0 +1,32 @@
+.title {
+  @include outer-container(100%);
+  text-align: center;
+}
+.site-title {
+  font-size: $font-XL;
+}
+.site-tagline {
+  font-size: $font-M;
+  margin-top: 0;
+}
+.portfolio {
+  @include outer-container(90%);
+  margin-top: $leading * 2;
+}
+.portfolio-project {
+  @include span-columns(4);
+  @include omega(3n);
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-style: normal;
+
+    img {
+      @include span-columns (4 of 4);
+    }
+    h2 {
+      font-size: $font-S;
+    }
+  }
+}
