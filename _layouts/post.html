@@ -1,14 +1,31 @@
 ---
 layout: default
 ---
-{% include header.html %}
+
+{% if page.image.feature %}
+  <div class="feature-image" style="background-image: url({% if page.image.feature %}{{ page.image.feature }}{% endif %})">
+    <nav class="post-nav">
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}">previous</a>
+      {% endif %}
+
+      {% if page.next %}
+        <a href="{{ page.next.url }}">next</a>
+      {% endif %}
+    </nav>
+  </div>
+{% endif %}
 
 <div class="post">
 
-  <header class="post-header">
+  <div class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    <p class="post-meta">{{ page.date | date: "%B %Y" }}</p>
+  </div>
+
+  <div class="post-overview">
+    {{ page.overview }}
+  </div>
 
   <article class="post-content">
     {{ content }}

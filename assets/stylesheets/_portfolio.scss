@@ -24,6 +24,7 @@
 
     img {
       @include span-columns (4 of 4);
+      margin-bottom: 0;
     }
     h2 {
       font-size: $font-S;

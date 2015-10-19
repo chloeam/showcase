@@ -1,0 +1,15 @@
+.post-nav {
+  font-family: $heading-font;
+  font-size: $font-XS;
+  float: right;
+  padding-right: 20px;
+  padding-top: 20px;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom: 2px solid white;
+  }
+}

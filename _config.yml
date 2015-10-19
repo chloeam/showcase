@@ -1,7 +1,7 @@
 # Site-wide Settings
 
-title: Your Awesome Title
-tagline: Short tagline (optional)
+title: Showcase
+tagline: A responsive Jekyll portfolio theme
 description: "This should be a description of your site that's no more than 160 characters long. This helps with search engines. You can edit this in _config.yml."
 baseurl: "" # subpath of your site e.g. /blog/, like if using github project page. Don't change unless you know what you're doing
 locale: en_US

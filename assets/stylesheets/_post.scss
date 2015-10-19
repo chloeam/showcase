@@ -1,0 +1,38 @@
+.feature-image {
+  height: 100vh;
+  min-height: 300px !important;
+  background-position: 50% 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.post {
+  @include outer-container(85%);
+}
+
+.post-header {
+  text-align: center;
+}
+
+.post-title {
+  font-size: $font-XL;
+}
+
+.post-meta {
+  margin-top: 0;
+  margin-bottom: $leading;
+}
+
+.post-overview {
+  @include span-columns(6);
+  @include shift(3);
+  margin-top: $leading;
+  font-size: $font-S;
+  line-height: $leading;
+}
+
+.post-content {
+  @include span-columns(12);
+}
