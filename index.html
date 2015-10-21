@@ -11,7 +11,7 @@ layout: default
   {% for post in site.posts %}
     <div class="portfolio-project">
       <a href="{{ post.url }}">
-        <img src="{{ post.image.cover }}" alt="{{ post.title }}">
+        <img class="portfolio-cover" src="{{ post.image.cover }}" alt="{{ post.title }}">
         <h2 class="project-name">{{ post.title }}</h2>
       </a>
     </div>

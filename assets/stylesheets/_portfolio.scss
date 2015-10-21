@@ -30,4 +30,10 @@
       font-size: $font-S;
     }
   }
+
+  :hover {
+    .portfolio-cover {
+      opacity: 0.9;
+    }
+  }
 }
